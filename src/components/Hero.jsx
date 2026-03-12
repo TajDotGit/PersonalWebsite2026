@@ -4,7 +4,7 @@ import DragonBackground from './DragonBackground'
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 text-center"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 md:px-16"
       aria-label="Hero"
     >
       {/* Layer 1: Abstract serpentine SVG — furthest back */}
@@ -55,36 +55,69 @@ export default function Hero() {
       />
 
       {/* Layer 4: Hero content — z-10 sits above all background layers */}
-      <div className="relative z-10 max-w-5xl mx-auto">
-        {/* H1 — the thesis statement */}
-        <motion.h1
-          className="font-display text-hero text-text-primary mb-6"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-        >
-          Build Different.
-        </motion.h1>
+      <div className="relative z-10 max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-12 md:gap-16">
 
-        {/* Subheadline — one-liner thesis */}
-        <motion.p
-          className="font-body text-lg md:text-xl text-text-muted font-light max-w-xl mx-auto mb-5"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.42 }}
-        >
-          Most people build what&apos;s asked. I build what&apos;s needed.
-        </motion.p>
+        {/* Text column — left-aligned on desktop, centered on mobile */}
+        <div className="flex-1 text-center md:text-left order-2 md:order-1">
+          <motion.h1
+            className="font-display text-hero text-text-primary mb-6"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+          >
+            Taj Ikhlaas
+          </motion.h1>
 
-        {/* Descriptor — identity in a line */}
-        <motion.p
-          className="font-body text-xs text-text-muted tracking-widest uppercase"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.68 }}
+          <motion.p
+            className="font-body text-lg md:text-xl text-text-muted font-light max-w-xl mb-5 mx-auto md:mx-0"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.42 }}
+          >
+            Most people build what&apos;s asked. I build what&apos;s needed.
+          </motion.p>
+
+          <motion.p
+            className="font-body text-xs text-text-muted tracking-widest uppercase"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.68 }}
+          >
+            Product Analyst. Founder.
+          </motion.p>
+        </div>
+
+        {/* Image column — organic curved frame */}
+        <motion.div
+          className="relative w-64 md:w-80 lg:w-[22rem] flex-shrink-0 order-1 md:order-2"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
         >
-          Taj Ikhlaas — Product Analyst. Future Founder.
-        </motion.p>
+          <div
+            className="overflow-hidden"
+            style={{
+              borderRadius: '62% 38% 46% 54% / 60% 44% 56% 40%',
+              boxShadow: '0 0 40px rgb(var(--color-accent) / 0.10)',
+            }}
+          >
+            <img
+              src="/images/Profile_Black_White.PNG"
+              alt="Taj Ikhlaas"
+              className="w-full h-auto block object-cover"
+              style={{ aspectRatio: '3 / 4' }}
+            />
+          </div>
+
+          {/* Decorative gold accent line below */}
+          <div
+            className="absolute -bottom-4 left-[12%] right-[12%] h-px"
+            style={{
+              background:
+                'linear-gradient(to right, transparent, rgb(var(--color-accent) / 0.35), transparent)',
+            }}
+          />
+        </motion.div>
       </div>
 
       {/* Scroll indicator — appears last, lives at bottom of viewport */}

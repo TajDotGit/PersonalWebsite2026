@@ -5,7 +5,8 @@ import Home    from './pages/Home'
 import Work    from './pages/Work'
 import Writing from './pages/Writing'
 import Post    from './pages/Post'
-import About   from './pages/About'
+import About    from './pages/About'
+import Projects from './pages/Projects'
 
 // AnimatePresence needs access to location, so routes must live
 // inside a component that can call useLocation within BrowserRouter.
@@ -17,6 +18,7 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/"        element={<Home />}    />
         <Route path="/work"    element={<Work />}    />
+        <Route path="/projects"     element={<Projects />} />
         <Route path="/writing"      element={<Writing />} />
         <Route path="/writing/:slug" element={<Post />}    />
         <Route path="/about"        element={<About />}   />

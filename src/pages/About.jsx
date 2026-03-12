@@ -42,9 +42,8 @@ function EditorialImg({ src, alt, height, objectPosition = 'center', className =
 
 const CURRENTLY = [
   { label: 'ROLE',     value: 'Product Analyst, Flint Hills Resources (Koch)' },
-  { label: 'BUILDING', value: 'Early-stage startup ideas with co-founders' },
-  { label: 'BASED',    value: 'Wichita, KS (not for long)' },
-  { label: 'NEXT',     value: 'San Francisco Bay Area' },
+  { label: 'BUILDING', value: 'Startups with co-founders — actively shipping' },
+  { label: 'BASED',    value: 'Wichita, KS' },
 ]
 
 // ─── About ────────────────────────────────────────────────────────────────────
@@ -182,24 +181,26 @@ export default function About() {
             <div className="mb-10">
               <EditorialImg
                 src="/images/about/Koch_SideProfile.PNG"
-                alt="Wichita, KS — Flint Hills Resources"
+                alt="Wichita, KS — Koch HQ Tower"
                 height="360px"
                 objectPosition="top center"
                 className="mb-3"
               />
               <p className="font-body text-[11px] text-text-muted italic mb-8 tracking-wide">
-                Wichita, KS — Flint Hills Resources.
+                Wichita, KS — Koch HQ Tower.
               </p>
 
               <p className="font-body text-[17px] leading-[1.8] text-text-muted">
                 Right now I'm a Product Analyst at Koch, learning what it means to own
-                something end to end in a real organization. But I'll be honest — I'm stuck
-                in the mud out here in Kansas, and I know it. The longer game is the Bay.
-                That's where the founders are, where the capital is, where the conversations
-                I want to be in are happening. I'm working on startup ideas with people I
-                trust, looking for the product worth going all in on. The goal was never
-                just a career. It was always to build something that mattered.
-                Still working on that part — but the direction is clear.
+                something end to end in a real organization. The work is sharpening how I
+                think about product — scoping, prioritizing, understanding what users
+                actually need versus what they say they want. Professionally, I'm pushing
+                toward product management with more ownership over what gets built and why.
+                Outside of work, I'm shipping real products with co-founders, learning the
+                hard lessons that only come from putting something live in front of real
+                users. The goal was never just a title — it's to build things that make
+                impact, stay innovative, and keep raising the bar. Still early, but the
+                trajectory is clear.
               </p>
             </div>
           </FadeUp>

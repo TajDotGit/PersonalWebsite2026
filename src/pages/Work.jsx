@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import Navbar        from '../components/Navbar'
 import Footer        from '../components/Footer'
 import WorkTimeline  from '../components/WorkTimeline'
-import WorkProjects  from '../components/WorkProjects'
 import { FadeUp }   from '../components/FadeUp'
 
 const pageVariants = {
@@ -60,11 +59,6 @@ export default function Work() {
         {/* ── Timeline ─────────────────────────────────────────────────── */}
         <section className="pb-16 md:pb-24 px-6 md:px-16 max-w-4xl mx-auto">
           <WorkTimeline />
-        </section>
-
-        {/* ── Projects ─────────────────────────────────────────────────── */}
-        <section className="py-16 md:py-24 px-6 md:px-16 max-w-5xl mx-auto border-t border-border">
-          <WorkProjects />
         </section>
 
         {/* ── Closing Statement ─────────────────────────────────────────── */}

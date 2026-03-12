@@ -60,6 +60,8 @@ const TIMELINE = [
     dates: 'Jan. 2024 – Jan. 2025',
     bullets: [
       'Led planning and execution of a 250+ attendee hackathon; owned event roadmap, sponsor outreach, and full team coordination.',
+      'Raised ~$15k in sponsorship funding through outreach to regional and national tech companies.',
+      'Managed treasury and financial operations including budget allocation, expense tracking, and sponsor fund disbursement.',
       'Partnered with university and industry stakeholders to align event goals with student career development outcomes.',
     ],
     tags: [],
@@ -87,10 +89,10 @@ const TIMELINE = [
     location: 'Manhattan, KS',
     dates: 'Aug. 2021 – Dec. 2025',
     bullets: [
-      'Graduated with a degree in Computer Science with focus areas in software engineering, data structures, and applied machine learning.',
+      'Graduated with a degree in Computer Science with focus areas in software engineering and data structures.',
       'Led two major student organizations simultaneously while completing degree.',
     ],
-    tags: ['Python', 'SQL', 'Data Structures', 'Machine Learning'],
+    tags: ['Python', 'SQL', 'Data Structures', 'C#', '.NET'],
   },
 ]
 

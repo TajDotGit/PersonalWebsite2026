@@ -4,9 +4,10 @@ import { motion } from 'framer-motion'
 import { useTheme } from '../context/ThemeContext'
 
 const navLinks = [
-  { to: '/work',    label: 'Work'    },
-  { to: '/writing', label: 'Writing' },
-  { to: '/about',   label: 'About'   },
+  { to: '/work',     label: 'Work'     },
+  { to: '/projects', label: 'Projects' },
+  { to: '/writing',  label: 'Writing'  },
+  { to: '/about',    label: 'About'    },
 ]
 
 // Sun icon — shown in dark mode (click to switch to light)
